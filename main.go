@@ -17,9 +17,16 @@ type Vehicle struct {
 }
 
 var vehicles = []Vehicle{
-	{1, "Toyota", "Corolla", 2023, 25000},
-	{2, "Honda", "Civic", 2023, 23000},
-	// Adicione mais veículos aqui
+	{1, "Toyota", "Corolla", 2023, 250.000},
+	{2, "Honda", "Civic", 2023, 230.000},
+	{3, "Renault ", "Kwid", 2023, 68.990},
+	{4, "Fiat ", "Mobi", 2023, 58.990},
+	{5, "Peugeot ", "208", 2023, 62.990},
+	{6, "Hyundai ", "HB20", 2023, 82.290},
+	{7, "Fiat ", "Argo", 2023, 79.790},
+	{8, "Fiat ", "Cronos", 2023, 84.790},
+	{9, "Volkswagen ", "Polo", 2023, 74.990},
+	{10, "Chevrolet ", "Onix", 2023, 78.390},
 }
 
 func main() {
@@ -56,12 +63,13 @@ func main() {
 			return
 		}
 
-		// Simulação de confirmação de envio
-		message := fmt.Sprintf("Lead gerado para o veículo %s. Entraremos em contato em breve.", vehicles[vehicleID-1].Model)
+		message := fmt.Sprintf("Muito obrigado pelo seu interesse %s. Entraremos em contato em breve.", vehicles[vehicleID-1].Model)
 		c.HTML(http.StatusOK, "confirmation.tmpl", gin.H{
 			"message": message,
 		})
 	})
+
+	router.Static("/static", "./static")
 
 	router.Run(":8080")
 }
