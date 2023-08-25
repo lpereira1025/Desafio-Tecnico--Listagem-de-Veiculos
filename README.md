@@ -1,16 +1,20 @@
 # Desafio-Tecnico--Listagem-de-Veiculos
 
-- Conforme solicitado, o teste consiste em desenvolver uma página que exiba uma lista de veículos e permita que o usuário selecione um veículo e insira dados de contato para gerar um lead. 
+- Conforme solicitado, o teste consiste em desenvolver uma página que exiba uma lista de veículos e permita que o usuário selecione um veículo e insira dados de contato para gerar um lead.
+
+- A resolução proposta para o desafio foi utilizar o framework <a href="https://gin-gonic.com/">Gin</a> já pensando em desempenho, produtividade e o CSS3 para uma breve estilização. 
 
 <h2>Requisitos Técnicos e configuração:</h2>
 
-- <a href="https://go.dev/dl/">Download Golang</a>;
+- Certifique que em sua maquina já tenha instalado o Go (Golang), caso não tenha <a href="https://go.dev/dl/">Click aqui</a>;
   
 - Clone o repositório;
   
 - Instale as dependências do projeto: `go mod download`
   
 - Execute o projeto: `go run main.go`
+
+- O projeto vai rodar na porta (Certifique que esta rodando antes de abrir o link): <a href="http://localhost:8080/">http://localhost:8080/</a>;
 
 <hr>
 
