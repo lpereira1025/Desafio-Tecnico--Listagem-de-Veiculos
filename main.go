@@ -63,7 +63,7 @@ func main() {
 			return
 		}
 
-		message := fmt.Sprintf("Muito obrigado pelo seu interesse %s. Entraremos em contato em breve.", vehicles[vehicleID-1].Model)
+		message := fmt.Sprintf("Muito obrigado pelo seu interesse no veículo %s. Entraremos em contato em breve.", vehicles[vehicleID-1].Model)
 		c.HTML(http.StatusOK, "confirmation.tmpl", gin.H{
 			"message": message,
 		})
