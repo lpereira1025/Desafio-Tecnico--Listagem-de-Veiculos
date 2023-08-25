@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista de Veículos</title>
+</head>
+<body>
+	<h1>Lista de Veículos</h1>
+	<ul>
+		{{range $vehicle := .vehicles}}
+		<li><a href="/vehicle/{{$vehicle.ID}}">{{$vehicle.Brand}} {{$vehicle.Model}}</a></li>
+		{{end}}
+	</ul>
+</body>
+</html>
